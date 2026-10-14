@@ -1,0 +1,26 @@
+[project]
+name = "job-scout"
+version = "1.0.0"
+description = "Personal job-search agent: collect public offers, extract facts with a local LLM, gate, score, digest."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+dependencies = ["httpx==0.28.1", "pyyaml==6.0.2"]
+
+[project.optional-dependencies]
+dev = ["pytest==9.1.1", "ruff==0.17.0"]
+
+[tool.setuptools]
+packages = ["scout"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 160
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = ["E731", "E741"]
