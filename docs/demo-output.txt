@@ -1,0 +1,31 @@
+job-scout demo - synthetic offers, fake LLM, fake geo table, no network
+
+10 offers collected, 5 scored, 5 excluded by the prefilter or the gates
+
+RANKED OFFERS (score / 100 = chances 35 + interest 25 + practicality 10 + judge 30)
+
+ 1.  93  Technicien prototypage et impression 3D - Fablux Makerspace, Differdange (57 min)
+         chances 34 | interest 25 | practical  7 | judge 27   skills: arduino, esp32
+         Fonce, c'est accessible et ça colle à tes projets.  [accessible : « aucune experience »]
+ 2.  85  Technicien électronique et IoT - Verdant Sensors, Virton (21 min)
+         chances 29 | interest 25 | practical 10 | judge 21   skills: esp32
+         Possible, mets tes projets en avant.  [accessible : « debutants acceptes », « nous vous formerons »]
+ 3.  84  Junior Python Developer - Quartz Analytics, Kirchberg (68 min)
+         chances 35 | interest 15 | practical  7 | judge 27   skills: python, sql, git, docker
+         Fonce, c'est accessible et ça colle à tes projets.  [accessible : « entry level », « junior », « self taught »]
+ 4.  82  Administrateur systèmes Linux junior - Nordlicht Hosting, Luxembourg (64 min)
+         chances 33 | interest 15 | practical  7 | judge 27   skills: docker, linux, bash
+         Fonce, c'est accessible et ça colle à tes projets.  [accessible : « autodidacte », « junior »; télétravail > 34 j/an : ces jours seraient imposés en France]
+ 5.  71  Technicien support informatique junior (H/F) - Brightwave IT Services, Arlon (49 min)
+         chances 29 | interest 15 | practical  6 | judge 21   skills: windows
+         Possible, mets tes projets en avant.  [accessible : « debutants acceptes », « formation assuree », « junior »]
+
+EXCLUDED
+
+  x  Comptable (H/F) - Ledger & Co: métier hors sujet
+  x  Développeur backend Java - Meridian Software: expérience pro exigée (4 ans)
+  x  Développeur full stack - Alpenrose Digital: exige de
+  x  Développeur web - Metz - Lorraine Pixel: trajet 91 min (max 50 hors Luxembourg)
+  x  Senior DevOps Engineer - Cobalt Cloud: poste senior / encadrement
+
+run: {"analysed": 5, "skipped": 5, "errors": 0, "judge": "server"}

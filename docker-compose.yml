@@ -1,0 +1,22 @@
+# job-scout API + scheduler. Demo without any LLM server:  SCOUT_DEMO=1 docker compose up --build
+# Real use: put your settings in .env (see .env.example) and mount your profile note.
+services:
+  job-scout:
+    build: .
+    image: job-scout:latest
+    restart: unless-stopped
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      - TZ=Europe/Paris
+      - SCOUT_DEMO=${SCOUT_DEMO:-}
+      - SCOUT_LLM_URL=${SCOUT_LLM_URL:-http://host.docker.internal:8080/v1}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"   # reach an LLM server running on the Docker host
+    ports:
+      - "127.0.0.1:8096:8096"                 # API, local only
+    volumes:
+      - ./data:/data
+      - ./out:/out
+      - ./profile.md:/app/profile.md:ro       # cp profile.example.md profile.md
