@@ -1,5 +1,7 @@
 # job-scout
 
+*[Version française](README.fr.md)*
+
 A personal job-search agent: it collects offers from public sources, lets a local LLM extract the facts of each
 offer, applies hard gates, scores what is left, and writes a daily digest. Python, SQLite, no framework.
 
